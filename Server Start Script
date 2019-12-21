@@ -1,0 +1,3 @@
+#! /bin/sh
+#This script assumes you're already cd'd to the */minecraft installation folder
+java -Xmx1024M -Xms1024M -jar server.jar nogui
