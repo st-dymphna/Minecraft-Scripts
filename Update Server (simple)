@@ -1,5 +1,5 @@
 #!/bin/bash
-#This script assumes you've already /stop 'd your server and then accepts the input of the URL from the most recent server.jar e.g. "https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar" 
+#This script assumes you've already /stop 'd your server, cd'd to the correct /minecraft installation directory, and then accepts the input of the URL from the most recent server.jar e.g. "https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar" 
 
 echo " "
 echo Before
