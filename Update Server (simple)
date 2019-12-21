@@ -1,0 +1,20 @@
+#!/bin/bash
+#This script assumes you've already /stop 'd your server and then accepts the input of the URL from the most recent server.jar e.g. "https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar" 
+
+echo " "
+echo Before
+echo " "
+ls -l
+
+sudo cp -r world world-backup && sudo cp server.jar server.jar-backup
+
+#ask for the new server web address
+read -p 'What is the new server.jar address? ' address
+
+#use address in wget
+sudo wget $address
+
+echo " "
+echo After
+echo " "
+ls -l
